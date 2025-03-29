@@ -184,7 +184,7 @@ iframe {
 /* Estilos para Telas Maiores */
 @media (min-width: 768px) {
   nav {
-    flex-direction: row; /* Muda a direção do layout para linha em telas maiores */
+    flex-direction: column; /* Muda a direção do layout para linha em telas maiores */
     justify-content: space-between; /* Coloca o conteúdo do menu e logo com espaço entre eles */
     padding: 10px 20px;
   }
