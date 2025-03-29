@@ -1,0 +1,209 @@
+/* Estilos Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #f7f9fa;
+  --color-green-700: #718355;
+  --color-green-500: #87986a;
+  --color-green-300: #b7c0a8;
+  --color-white: #f8f9fa;
+  --color-black: #000000;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--color-green-500);
+  text-align: center;
+  overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+header {
+  background: var(--color-green-300);
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza a logo e o menu */
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;  /* Alinha os itens verticalmente */
+  justify-content: center;
+  align-items: center;  /* Centraliza os itens na horizontal */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: none;
+}
+
+nav ul li {
+  padding: 2px;
+}
+
+nav ul li a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+  margin-bottom: 10px; /* Espaço entre a logo e o menu */
+}
+
+.logo img {
+  width: 100px; /* Tamanho da logo */
+}
+
+.menu {
+  display: flex;
+  justify-content: center; /* Centraliza os itens do menu */
+  list-style: none;
+  padding: 0;
+}
+
+/* Seção Home */
+#home {
+  position: relative;
+}
+
+#home .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+.content {
+  position: relative;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1; /* Coloca o conteúdo acima da imagem */
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-family: "Bodoni Moda", serif;
+}
+
+.content p {
+  font-size: 0.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contagem {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.numero {
+  background-color: var(--color-green-500);
+  color: white;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Seção Ramo Divisor */
+.ramo-divisor img {
+  width: 250px;
+}
+
+/* Seção Cerimônia e Recepção */
+.ceremony-container,
+.reception-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ceremony h1, #reception h1, #gifts h1, #presence h1 {
+  font-size: 2rem;
+  font-family: "Bodoni Moda", serif;
+}
+
+.ceremony-info, .reception-info, .gift-info, .presence-info {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  line-height: 1.6rem;
+  margin: 10px 0;
+  width: 90%;
+}
+
+.ceremony-image img,
+.reception-image img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+iframe {
+  width: 90%;
+  border-radius: 10px;
+}
+
+/* Lista de Presentes */
+.gift-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.gift-item {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.gift-item img {
+  width: 100px;
+  height: auto;
+}
+
+.buy-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Estilos para Telas Maiores */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row; /* Muda a direção do layout para linha em telas maiores */
+    justify-content: space-between; /* Coloca o conteúdo do menu e logo com espaço entre eles */
+    padding: 10px 20px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os itens do menu */
+  }
+
+  .menu li {
+    padding: 10px 15px;
+  }
+
+  .menu li a {
+    font-size: 1rem; /* Aumenta o tamanho da fonte */
+  }
+
+  .logo img {
+    width: 150px; /* Aumenta o tamanho da logo */
+  }
+}
