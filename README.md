@@ -25,6 +25,7 @@ Este site foi desenvolvido em HTML e CSS puro, com foco em um design elegante, r
 
 - HTML5
 - CSS3 (customizado, com `@media` queries para responsividade)
+- JavaScript (Contador Regressivo)
 - Google Fonts
 - Mercado Pago (integração com links diretos de pagamento)
 
