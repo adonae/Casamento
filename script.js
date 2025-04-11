@@ -26,3 +26,16 @@ document.getElementById('segundo').innerHTML = segundos;
   
 
 }, 1000);
+
+const backToTop = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTop.style.display = 'block';
+  } else {
+    backToTop.style.display = 'none';
+  }
+});
+
+// Inicialmente esconde
+backToTop.style.display = 'none';
