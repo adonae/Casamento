@@ -2,6 +2,12 @@
 
 Este é o site oficial do meu casamento, desenvolvido com muito carinho para compartilhar os detalhes do grande dia com amigos e familiares. Nele, você encontrará todas as informações importantes sobre a cerimônia, recepção, lista de presentes e confirmação de presença.
 
+## 🚀 Como Visualizar
+
+Este site está publicado via **GitHub Pages**. Você pode visualizar acessando:
+
+🔗 [Github.io/Casamento](https://adonae.github.io/Casamento/)
+
 ## 🌿 Sobre o Projeto
 
 Este site foi desenvolvido em HTML e CSS puro, com foco em um design elegante, responsivo e acolhedor. O esquema de cores em tons de verde transmite tranquilidade e harmonia, refletindo a essência do nosso casamento.
@@ -28,12 +34,6 @@ Este site foi desenvolvido em HTML e CSS puro, com foco em um design elegante, r
 - JavaScript (Contador Regressivo)
 - Google Fonts
 - Mercado Pago (integração com links diretos de pagamento)
-
-## 🚀 Como Visualizar
-
-Este site está publicado via **GitHub Pages**. Você pode visualizar acessando:
-
-🔗 [Github.io/Casamento](https://adonae.github.io/Casamento/)
 
 ## 📁 Organização do Projeto
 
