@@ -37,5 +37,18 @@ window.addEventListener('scroll', () => {
   }
 });
 
+ function copiarPix() {
+    const codigoPix = '00020126850014BR.GOV.BCB.PIX013615df05cc-89dc-4802-be16-74530ef1979c0223Obrigada pelo presente!5204000053039865802BR5925Eliza Maria Souza de Fari6009SAO PAULO62140510lpKxqvXya063049AE6';
+    
+    navigator.clipboard.writeText(codigoPix)
+      .then(() => {
+        alert("Código PIX copiado com sucesso!");
+      })
+      .catch(err => {
+        alert("Erro ao copiar o código. Tente novamente.");
+        console.error('Erro ao copiar:', err);
+      });
+  }
+
 // Inicialmente esconde
 backToTop.style.display = 'none';
